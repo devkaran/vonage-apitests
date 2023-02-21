@@ -1,0 +1,19 @@
+{
+  "name": "Vonage API config",
+  "version": "1.0.0",
+  "environment": "prod",
+  "SERVICES": {
+    "VONAGE": {
+      "scheme": "https",
+      "host": "api.nexmo.com/v0.1",
+      "APIS": {
+        "CONVERSATIONS": {"path": "/conversations"},
+        "USERS": {"path": "/users"},
+        "MEMBERS": {"path": "/conversations/%s/members"},
+        "EVENTS": {"path": "/conversations/%s/events"},
+        "LEGS": {"path": "/legs"}
+      }
+    }
+  }
+}
+

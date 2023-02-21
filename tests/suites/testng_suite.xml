@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VonageService" parallel="true">
+    <listeners>
+        <listener class-name="com.vonage.api.testng_listeners.retry.RetryListener"/>
+        <listener class-name="com.vonage.api.testng_listeners.ExtentTestNGListener"/>
+    </listeners>
+    <test name="VonageConversationTests">
+        <classes>
+            <class name="com.vonage.api.EndToEndTest" />
+        </classes>
+    </test>
+</suite>
